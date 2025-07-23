@@ -3,11 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AndesGold Avocados</title>
+  <title>AndesGold — Premium Colombian Hass Avocados</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Welcome to AndesGold</h1>
-  <p>Premium Hass Avocados from the Colombian Andes, exported worldwide.</p>
-  <p>Contact us: <a href="mailto:sales@andesgold.co">sales@andesgold.co</a></p>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">AndesGold</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div></div><div></div><div></div>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>From the Andes to the World</h1>
+      <p>Premium Colombian Hass Avocados with Purpose</p>
+      <div class="hero-cta">
+        <a href="#about" class="btn">Learn More</a>
+        <a href="#contact" class="btn outline">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About AndesGold</h2>
+      <p>AndesGold is a Colombian avocado export company with a mission: to deliver the highest-quality Hass avocados from the rich Andean soil to tables around the globe — while uplifting the communities that grow them.</p>
+    </section>
+
+    <section id="products" class="section dark">
+      <h2>Our Products</h2>
+      <p>Medium-to-large size, creamy texture, rich flavor. Available year-round, with Class I & II grades and custom packaging.</p>
+    </section>
+
+    <section id="impact" class="section">
+      <h2>Our Impact</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🌳 Deforestation Reversal</h3>
+          <p>Partnering with NGOs to replant native trees across the Amazon Basin.</p>
+        </div>
+        <div class="card">
+          <h3>🧒 Rural Poverty Relief</h3>
+          <p>Supporting food programs and housing projects in underserved villages.</p>
+        </div>
+        <div class="card">
+          <h3>📚 Ag Science Education</h3>
+          <p>Providing scholarships and training for future agricultural innovators.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="section dark">
+      <h2>Our Story</h2>
+      <p>Founded by locals passionate about sustainable trade, AndesGold bridges global demand and rural opportunity, one avocado at a time.</p>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:hello@andesgold.co">hello@andesgold.co</a></p>
+    <p>WhatsApp: <a href="https://wa.me/573001234567" target="_blank">+57 300 123 4567</a></p>
+    <p>Office: Bogotá, Colombia</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
