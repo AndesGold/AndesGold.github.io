@@ -3,79 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AndesGold — Premium Colombian Hass Avocados</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <title>AvoWorld - Colombian Hass Avocado Exports</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">AndesGold</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#story">Our Story</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <div></div><div></div><div></div>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.jpg" alt="AvoWorld Logo" />
+        <span>AVOWORLD</span>
       </div>
-    </nav>
-    <div class="hero-content">
-      <h1>From the Andes to the World</h1>
-      <p>Premium Colombian Hass Avocados with Purpose</p>
-      <div class="hero-cta">
-        <a href="#about" class="btn">Learn More</a>
-        <a href="#contact" class="btn outline">Contact Us</a>
-      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#sustainability">Sustainability</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle">☰</button>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="section">
-      <h2>About AndesGold</h2>
-      <p>AndesGold is a Colombian avocado export company with a mission: to deliver the highest-quality Hass avocados from the rich Andean soil to tables around the globe — while uplifting the communities that grow them.</p>
-    </section>
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>AVOWORLD COLOMBIA</h1>
+      <p>Premium Hass avocados from Colombia exported worldwide</p>
+      <button>See more</button>
+    </div>
+  </section>
 
-    <section id="products" class="section dark">
-      <h2>Our Products</h2>
-      <p>Medium-to-large size, creamy texture, rich flavor. Available year-round, with Class I & II grades and custom packaging.</p>
-    </section>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>COLOMBIAN HASS AVOCADO ORGANIZATION</h2>
+      <p>We are dedicated to promoting and exporting the finest Colombian Hass avocados worldwide. Our commitment to quality, sustainability, and innovation has made us a trusted partner globally.</p>
+    </div>
+  </section>
 
-    <section id="impact" class="section">
-      <h2>Our Impact</h2>
-      <div class="cards">
+  <section id="products" class="section">
+    <div class="container">
+      <h2>OUR PRODUCTS</h2>
+      <div class="grid">
         <div class="card">
-          <h3>🌳 Deforestation Reversal</h3>
-          <p>Partnering with NGOs to replant native trees across the Amazon Basin.</p>
+          <img src="grow.jpg" alt="Growing" />
+          <h3>Avocado Growing</h3>
+          <p>Certified growers using sustainable methods.</p>
         </div>
         <div class="card">
-          <h3>🧒 Rural Poverty Relief</h3>
-          <p>Supporting food programs and housing projects in underserved villages.</p>
+          <img src="produce.jpg" alt="Production" />
+          <h3>Avocado Production</h3>
+          <p>State-of-the-art production facilities.</p>
         </div>
         <div class="card">
-          <h3>📚 Ag Science Education</h3>
-          <p>Providing scholarships and training for future agricultural innovators.</p>
+          <img src="export.jpg" alt="Export" />
+          <h3>Avocado Export</h3>
+          <p>Exported globally with top logistics.</p>
+        </div>
+        <div class="card">
+          <img src="quality.jpg" alt="Quality Control" />
+          <h3>Quality Control</h3>
+          <p>Rigorous inspection to meet standards.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="story" class="section dark">
-      <h2>Our Story</h2>
-      <p>Founded by locals passionate about sustainable trade, AndesGold bridges global demand and rural opportunity, one avocado at a time.</p>
-    </section>
-  </main>
+  <section id="sustainability" class="section green-bg">
+    <div class="container">
+      <h2>GROWING AVOCADOS, GROWING COMMUNITIES</h2>
+      <p>We support rainforest conservation, community development, and agricultural education.</p>
+    </div>
+  </section>
 
-  <footer id="contact" class="footer">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:hello@andesgold.co">hello@andesgold.co</a></p>
-    <p>WhatsApp: <a href="https://wa.me/573001234567" target="_blank">+57 300 123 4567</a></p>
-    <p>Office: Bogotá, Colombia</p>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>GET IN TOUCH</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 AvoWorld Colombia. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
