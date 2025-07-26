@@ -1,0 +1,346 @@
+/*
+  AndesGold company website styles
+  A professional, clean design using a green and gold palette to evoke
+  freshness, quality and trust. The layout is responsive and adapts
+  gracefully across devices.
+*/
+
+/* CSS Variables for easy colour management */
+:root {
+  --primary-color: #2f8f2f; /* deep green for buttons and highlights */
+  --secondary-color: #cda434; /* warm gold accent colour */
+  --dark-color: #143d14; /* dark green for header and footer */
+  --light-color: #ffffff; /* white background for sections */
+  --text-color: #333333; /* default text colour */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background: var(--light-color);
+  /* space for fixed header */
+  padding-top: 80px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--dark-color);
+  color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+header nav a:hover {
+  background: var(--primary-color);
+}
+
+/* Language selector */
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.language-selector label {
+  color: #ffffff;
+}
+
+.language-selector select {
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  background-image: url('assets/orchard.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 650px;
+  margin-left: 10%;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Generic Section Styles */
+.section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--secondary-color);
+  margin-top: 8px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.grid.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.image-wrapper {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Features list */
+.features {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.features li strong {
+  color: var(--primary-color);
+}
+
+.features li::before {
+  content: '\f058';
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+/* Giving Back section */
+.giving {
+  background: #f5fdf5;
+}
+
+.giving-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555555;
+}
+
+/* Contact section */
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: var(--primary-color);
+}
+
+.contact a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background: var(--dark-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .social-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 960px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: var(--dark-color);
+    padding: 10px;
+    border-radius: 4px;
+  }
+  header nav ul.show {
+    display: flex;
+  }
+  header nav li {
+    margin-bottom: 10px;
+  }
+}
